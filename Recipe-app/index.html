@@ -16,7 +16,7 @@
     <header>
         <div id="top-div">
             <h1>Recipe-App</button></h1>
-            <button id="bt" type="button" class="btn btn-primary">Add Recipe</button>            
+            <button id="bt" type="button" class="btn btn-primary" onclick="createRecipeModal()">Add Recipe</button>            
         </div>
     </header><br>
     <main class="center-align">
@@ -26,7 +26,7 @@
                     <img src="comida-vegana-braslia_capa.jpeg" alt="">
                     <div class="card-body">
                       <h4 class="card-title">Recipe 1</h4>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recipe-one">
                         Launch demo modal
                       </button>
                     </div>
@@ -37,7 +37,7 @@
                     <img src="comida-vegana-braslia_capa.jpeg" alt="">
                     <div class="card-body">
                       <h4 class="card-title">Recipe 2</h4>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recipe-two">
                         Launch demo modal
                       </button>
                     </div>
@@ -48,7 +48,7 @@
                     <img src="comida-vegana-braslia_capa.jpeg" alt="">
                     <div class="card-body">
                       <h4 class="card-title">Recipe 3</h4>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recipe-three">
                         Launch demo modal
                       </button>
                     </div>
@@ -57,18 +57,22 @@
         </div>
         <br>
     </main>
+
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade" id="recipe-one" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle"><input type="text"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo debitis in! Quam nostrum debitis recusandae animi laudantium, nam at, numquam, ab minus quidem optio et enim deserunt labore laborum.
+            <h6>Ingredients</h6>
+            <textarea name="ingredients" id="ingredient" cols="30" rows="10"></textarea>
+            <h6>How to prepare</h6>
+            <textarea name="prepares" id="how-to-prepare" cols="30" rows="10"></textarea>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -77,5 +81,52 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="recipe-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"><input type="text"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h6>Ingredients</h6>
+            <textarea name="ingredients" id="ingredient" cols="30" rows="10"></textarea>
+            <h6>How to prepare</h6>
+            <textarea name="prepares" id="how-to-prepare" cols="30" rows="10"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="recipe-three" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"><input type="text"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h6>Ingredients</h6>
+            <textarea name="ingredients" id="ingredient" cols="30" rows="10"></textarea>
+            <h6>How to prepare</h6>
+            <textarea name="prepares" id="how-to-prepare" cols="30" rows="10"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="tester"></p>
 </body>
 </html>
