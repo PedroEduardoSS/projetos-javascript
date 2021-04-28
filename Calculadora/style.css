@@ -1,0 +1,29 @@
+body {
+    background-color: firebrick;
+    margin: 10% 25% 10% 25%;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 35%;
+}
+
+.grid-container {
+    background-color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 80px;
+    text-align: center;
+}
+
+#tela{
+    background-color: aliceblue;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    border-style: solid;
+}
+
+button {
+    padding: 20px ;
+}
