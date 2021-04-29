@@ -12,22 +12,22 @@
     <h1>Calculadora</h1>
     <div class="grid-container">
         <div id="demo"><p id="tela"></p></div>
-        <button onclick="addNum()" id="um">1</button>
-        <button onclick="addNum()" id="dois">2</button>
-        <button onclick="addNum()" id="tres">3</button>
-        <button onclick="" id="soma">+</button>    
-        <button onclick="" id="quatro">4</button>
-        <button onclick="" id="cinco">5</button>
-        <button onclick="" id="seis">6</button>
-        <button onclick="" id="sub">-</button>
-        <button onclick="" id="sete">7</button>
-        <button onclick="" id="oito">8</button>
-        <button onclick="" id="nove">9</button>
-        <button onclick="" id="multi">*</button>
-        <button onclick="" id="zero">0</button>
-        <button onclick="" id="divi">/</button>
-        <button onclick="" id="limpar">c</button>
-        <button onclick="" id="igual">=</button>
+        <button class="grid-item" onclick="limpar()" id="limpar">c</button>
+        <button class="grid-item" onclick="addDig('+')" id="soma">+</button>
+        <button class="grid-item" onclick="addDig('-')" id="sub">-</button>
+        <button class="grid-item" onclick="addDig('*')" id="multi">*</button>
+        <button class="grid-item" onclick="addDig('1')" id="um">1</button>
+        <button class="grid-item" onclick="addDig('2')" id="dois">2</button>
+        <button class="grid-item" onclick="addDig('3')" id="tres">3</button>
+        <button class="grid-item" onclick="addDig('/')" id="divi">/</button>    
+        <button class="grid-item" onclick="addDig('4')" id="quatro">4</button>
+        <button class="grid-item" onclick="addDig('5')" id="cinco">5</button>
+        <button class="grid-item" onclick="addDig('6')" id="seis">6</button>
+        <button class="grid-item" onclick="efetuar()" id="igual">=</button>
+        <button class="grid-item" onclick="addDig('7')" id="sete">7</button>
+        <button class="grid-item" onclick="addDig('8')" id="oito">8</button>
+        <button class="grid-item" onclick="addDig('9')" id="nove">9</button>
+        <button class="grid-item" onclick="addDig('0')" id="zero">0</button>
     </div>
 </body>
 </html>

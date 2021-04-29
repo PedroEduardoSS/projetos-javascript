@@ -9,12 +9,20 @@ h1 {
 }
 
 .grid-container {
-    background-color: aqua;
+    background-color: lightsalmon;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 80px;
     text-align: center;
+}
+
+.grid-item {
+    width: 95%;
+    height: 95%;
+    padding: 30px 30px 30px 30px;
+    border-radius: 30%;
+    margin-left: 2%;
 }
 
 #demo{
