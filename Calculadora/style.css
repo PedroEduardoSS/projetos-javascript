@@ -17,7 +17,7 @@ h1 {
     text-align: center;
 }
 
-#tela{
+#demo{
     background-color: aliceblue;
     grid-column: 1 / span 4;
     grid-row: 1;
@@ -26,4 +26,9 @@ h1 {
 
 button {
     padding: 20px ;
+}
+
+p {
+    text-align: right;
+    font-size: 30px;
 }
