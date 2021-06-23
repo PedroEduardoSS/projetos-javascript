@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de juros</title>
+</head>
+<body>
+    <strong><p id="Juros simples"></p></strong>
+    <strong><p id="Juros compostos"></p></strong>
+
+    <script>
+        class Juros{
+            constructor(C, i, t){
+                this.capital = C;
+                this.taxa = i;
+                this.tempo = t
+            }
+
+            simples(){
+                this.montante = this.capital + (this.capital * (this.taxa / 100) * this.tempo)
+                return this.montante.toFixed(2)
+                //console.log(this.montante)
+            }
+
+            compostos(){
+                this.montante = this.capital * ((1 + (this.taxa / 100))**this.tempo)
+                this.juros_total = this.montante - this.capital
+                return this.montante.toFixed(2)
+                //console.log(this.montante)
+            }
+        }
+
+        var simples = new Juros(200, 4, 3)
+        document.getElementById("Juros simples").innerHTML = "Montante = R$" + simples.simples();
+        var compostos = new Juros(10000, 8, 2)
+        document.getElementById("Juros compostos").innerHTML = "Montante = R$" + compostos.compostos();
+
+    </script>
+</body>
+</html>
