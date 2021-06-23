@@ -1,6 +1,6 @@
 const tela = document.getElementById("tela");
 function addDig(dig) {
-    let digito = document.getElementById("tela").innerHTML;
+    let digito = tela.innerHTML;
     document.getElementById("tela").innerHTML = digito + dig;
 }
 
